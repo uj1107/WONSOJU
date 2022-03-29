@@ -1,0 +1,90 @@
+.main {
+  width: 100%;
+}
+
+.wrap {
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrap > form {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.wrap > form > input {
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: rgba(85, 92, 77, 0.3) solid 1px;
+}
+
+.wrap > form > input:hover,
+.wrap > form > input:focus {
+  border: rgba(85, 92, 77, 1) solid 1px;
+}
+
+.wrap > section {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+
+.wrap > section > span:first-of-type {
+  float: left;
+}
+
+.wrap > section > span:nth-of-type(2) {
+  float: right;
+}
+
+.wrap > .log_in,
+.sign_in {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.wrap > .log_in {
+  background-color: #555c4d;
+  color: white;
+}
+.wrap > .log_in:hover {
+  background-color: transparent;
+  border: #555c4d solid 1px;
+}
+.wrap > .log_in:hover a {
+  color: #555c4d;
+}
+
+.wrap > .sign_in {
+  border: #555c4d solid 1px;
+  background-color: transparent;
+}
+.wrap > .sign_in:hover {
+  border: none;
+  background-color: #555c4d;
+}
+.wrap > .sign_in:hover a {
+  color: white;
+}
+
+.wrap > div > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap > .sns {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

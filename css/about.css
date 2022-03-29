@@ -1,0 +1,9 @@
+.main {
+  width: 100%;
+}
+
+.main > img {
+  width: 95%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}

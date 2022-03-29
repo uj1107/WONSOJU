@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 15px;
+}
+
+.container {
+  font-family: "Pretendard-Regular";
+  font-weight: 200;
+  color: #555c4d;
+}
+
+header > nav > ul > #basket {
+  font-size: 1.5rem;
+}
+
+header > nav > ul > #basket > a > p {
+  color: white;
+  font-size: 1px;
+}
+
+#searchbox input {
+  font-size: 1.4rem;
+}
+
+header > nav {
+  font-size: 0.9rem;
+}
+
+footer {
+  font-size: 0.8rem;
+  color: #999f88;
+  line-height: 1.3rem;
+}
+
+/* brand 브랜드 */
+#brand-main > .wrap > section {
+  font-size: 0.9rem;
+}
+
+/* basket 장바구니 */
+#basket-main > section a {
+  font-size: 0.8rem;
+}
+
+#basket-main > p {
+  font-weight: bold;
+}
+
+#basket-main > .notice h4 {
+  font-size: 0.9rem;
+}
+
+.main > .notice {
+  font-size: 0.7rem;
+}
