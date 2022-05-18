@@ -143,12 +143,4 @@ $(document).ready(function () {
     fade: true,
     cssEase: "linear",
   });
-
-  // 리사이즈 시 자동 새로고침
-  window.onresize = function () {
-    document.location.reload();
-    // if ($(window).width() <= 900) {
-
-    // }
-  };
 });
