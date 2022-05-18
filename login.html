@@ -34,29 +34,61 @@
           <hr noshade="noshade" style="border: 0; height: 1px" />
         </div>
       </div>
+      <!-- mobile hamburger menu 햄버거 메뉴 -->
+      <div class="mobile_only" id="ham_menu">
+        <ul class="top">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="brand.html">BRAND</a></li>
+          <li>
+            <a href="process.html">PROCESS</a>
+          </li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+        <ul class="bot">
+          <li class="basket nottrans">
+            <a href="basket.html"
+              ><i class="fa-solid fa-bag-shopping"></i>
+              <p>0</p></a
+            >
+          </li>
+          <li class="search nottrans">
+            <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <form action="">
+              <input type="search" placeholder="검색어를 입력하세요..." />
+            </form>
+          </li>
+        </ul>
+      </div>
       <header>
         <!-- 스크롤 이벤트 -->
-        <div class="hide-box"></div>
+        <div class="hide-box mobile_none"></div>
         <nav id="nav">
           <div class="logo">
             <a href="home.html"> <img src="./image/logo.png" alt="" /></a>
           </div>
           <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="brand.html">BRAND</a></li>
-            <li><a href="process.html">PROCESS</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-            <li class="nottrans" id="basket">
+            <li class="mobile_none"><a href="home.html">HOME</a></li>
+            <li class="mobile_none"><a href="about.html">ABOUT US</a></li>
+            <li class="mobile_none"><a href="brand.html">BRAND</a></li>
+            <li class="mobile_none"><a href="process.html">PROCESS</a></li>
+            <li class="mobile_none"><a href="login.html">LOGIN</a></li>
+            <li class="mobile_none nottrans" id="basket">
               <a href="basket.html"
                 ><i class="fa-solid fa-bag-shopping"></i>
                 <p>0</p></a
               >
             </li>
-            <li class="nottrans" id="searchicon">
+            <li class="mobile_none nottrans" id="searchicon">
               <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
             </li>
           </ul>
+          <!-- mobile only 햄버거 메뉴 햄버거 버튼 -->
+          <div class="hamburger mobile_only">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
       </header>
       <!-- main -->
@@ -83,18 +115,30 @@
           <div class="sign_in"><a href="#">회원가입</a></div>
         </div>
       </div>
-      <!-- footer-->
+      <!-- footer -->
       <footer>
         <div class="foot-l">
-          <a href="home.html"> <img src="./image/logo.png" alt="" /></a>
-          <p>
+          <a href="home.html" class="mobile_none">
+            <img src="./image/logo.png" alt=""
+          /></a>
+          <p class="mobile_none">
             원스피리츠 주식회사 농업회사법인
             <br />
             Copyright © 원스피리츠 주식회사 농업회사법인. All rights reserved.
           </p>
+          <div class="mobile_only inner-l">
+            <p>WONSOJU 원소주</p>
+            <p>070-4349-3175</p>
+          </div>
+          <div class="mobile_only inner-r">
+            <p><a href="about.html">about</a></p>
+            <p><a href="guide.html">guide</a></p>
+            <p><a href="agreement.html">agreement</a></p>
+            <p><a href="privacy.html">privacy policy</a></p>
+          </div>
         </div>
         <div class="foot-r">
-          <p>
+          <p class="mobile_none">
             070-4349-3175
             <br />
             원스피리츠 주식회사 농업회사법인
@@ -111,12 +155,16 @@
 
             Designed by moa-studio · Hosting by 카페24㈜
           </p>
-          <ul class="about">
+          <ul class="about mobile_none">
             <li><a href="about.html">about</a></li>
-            <li><a href="agreement.html">agreement</a></li>
             <li><a href="giude.html">guide</a></li>
+            <li><a href="agreement.html">agreement</a></li>
             <li><a href="privacy.html">privacy</a></li>
           </ul>
+          <p>
+            Copyright © WONSOJU 원소주. ALL rights reserved. <br />
+            Hosting by 카페24㈜
+          </p>
           <ul class="sns">
             <li><a href="https://www.instagram.com/wonsoju/">instagram</a></li>
             <li>

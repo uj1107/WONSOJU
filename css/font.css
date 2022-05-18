@@ -33,6 +33,15 @@ header > nav {
   font-size: 0.9rem;
 }
 
+#ham_menu > ul.bot > .basket a p {
+  font-size: 0.5rem;
+  color: white;
+}
+
+.main > h3.mobile_only {
+  font-size: 1.2rem;
+}
+
 footer {
   font-size: 0.8rem;
   color: #999f88;
@@ -59,4 +68,29 @@ footer {
 
 .main > .notice {
   font-size: 0.7rem;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header > nav > ul > li.mobile_none {
+    color: #555c4d;
+  }
+  header.click > nav > ul > li.mobile_none {
+    font-size: 1.3rem;
+    color: #555c4d;
+  }
+
+  #ham_menu {
+    font-size: 1.3rem;
+  }
+
+  /* main */
+  .main > h3.mobile_only {
+    font-size: 1.3rem;
+  }
 }

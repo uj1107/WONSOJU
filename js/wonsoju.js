@@ -1,4 +1,32 @@
 $(document).ready(function () {
+  // 모바일 반응형 mobile_only
+
+  if (matchMedia("screen and (max-width: 425px)").matches) {
+    // 햄버거 버튼 햄버거 메뉴
+    var burger = $(".hamburger");
+
+    burger.on("click", function () {
+      burger.toggleClass("click");
+      $("#ham_menu").toggleClass("click");
+      $("header").toggleClass("click");
+
+      // 햄버거 메뉴 속 검색 버튼 search
+      $(".search > a").on("click", function () {
+        $(".search > form").toggleClass("click");
+      });
+    });
+
+    $("#home-main > .mobile_slider").slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: false,
+      infinite: true,
+      speed: 1500,
+      fade: true,
+      cssEase: "linear",
+    });
+  }
+
   // searchbox 검색 기능
   var searchIcon = document.getElementById("searchicon");
   var searchBox = document.getElementById("searchbox");
@@ -69,8 +97,38 @@ $(document).ready(function () {
 
     if (scrollbottom >= mainHeight) {
       $("#footer").css("opacity", -0.7 + nowScrollTop / 350);
+      if (scrollbottom >= mainHeight + 150) {
+        $("#footer").css("z-index", 30);
+      } else {
+        $("#footer").css("z-index", 0);
+      }
     } else {
       $("#footer").css("opacity", 0);
+    }
+
+    // 반응형 푸터
+    if (matchMedia("screen and (max-width: 900px)").matches) {
+      var mainHeight = main.clientHeight - 300;
+
+      if (scrollbottom >= mainHeight) {
+        $("#footer").css("opacity", nowScrollTop / 300);
+        if (scrollbottom >= mainHeight + 280) {
+          $("#footer").css("z-index", 30);
+        } else {
+          $("#footer").css("z-index", 0);
+        }
+      } else {
+        $("#footer").css("opacity", 0);
+      }
+    }
+    if (matchMedia("screen and (max-width: 425px)").matches) {
+      var mainHeight = main.clientHeight - 350;
+
+      if (scrollbottom >= mainHeight) {
+        $("#footer").css("opacity", -1.5 + nowScrollTop / 00);
+      } else {
+        $("#footer").css("opacity", 0);
+      }
     }
   }
 
@@ -85,4 +143,12 @@ $(document).ready(function () {
     fade: true,
     cssEase: "linear",
   });
+
+  // 리사이즈 시 자동 새로고침
+  window.onresize = function () {
+    document.location.reload();
+    // if ($(window).width() <= 900) {
+
+    // }
+  };
 });
