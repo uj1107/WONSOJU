@@ -125,7 +125,12 @@ $(document).ready(function () {
       var mainHeight = main.clientHeight - 350;
 
       if (scrollbottom >= mainHeight) {
-        $("#footer").css("opacity", -1.5 + nowScrollTop / 00);
+        $("#footer").css("opacity", -1.5 + nowScrollTop / 500);
+        if (scrollbottom >= mainHeight + 350) {
+          $("#footer").css("z-index", 30);
+        } else {
+          $("#footer").css("z-index", 0);
+        }
       } else {
         $("#footer").css("opacity", 0);
       }
